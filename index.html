@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Foodblog</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="scss/styles.css">
+    <link rel="stylesheet" type="text/css" href="scss/header.css">
+    <link rel="stylesheet" type="text/css" href="scss/variables.css">
+    <link rel="stylesheet" type="text/css" href="scss/footer.css">
+    <link rel="stylesheet" type="text/css" href="scss/startpage.css">
+    <link rel="icon" type="image/png" href="img/logo-liebeimtopf.svg" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/logo-liebeimtopf.svg" sizes="96x96">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700;1,800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+
+<body class="body">
+
+<header>
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <a href="index.html">
+                        <img class="logo" src="img/logo-liebeimtopf.svg" alt="Logo">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-9">
+                    <nav>
+                        <input type="checkbox" id="nav" class="hidden"/>
+                        <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+                        <div class="nav-container">
+                            <ul>
+                                <li><a class="active" href="index.html">Home</a></li>
+                                <li><a href="overview.html">Gsund & Guad</a></li>
+                                <li><a href="about_us.html">Über uns</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bottom">
+        <span class="header-vertical-text">
+            <span>The healthy secret</span>
+        </span>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-5">
+                    <div class="header-left">
+                        <h1 class="style-h1">Avocado Salad</h1>
+                        <p class="subtitle">SALAD, TOFU, TOMATOES, CUCUMBER, SPINACH, AVOCADO, PUMPKIN SEEDS</p>
+                        <a class="button" href="blog-entry.html">Zum Blogeintrag</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-7">
+                    <div class="header-img">
+                        <img src="img/bowl.png" alt="Avocado Salad">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="startpage-about">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="startpage-about-images">
+                    <img class="friends" src="img/about.jpg" alt="Über uns">
+                    <img class="pink-dots" src="img/pink-dots.svg" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="startpage-about-text">
+                    <h2 class="style-h2">Willkommen bei Liebe im Topf!</h2>
+                    <p class="text mb-5">Kochen ruft in uns die guten Seiten hervor. Um unsere Leidenschaft fürs Essen (und
+                        Kochen) mit der Menschheit zu teilen haben wir diesen Foodblog ins Leben gerufen. Wir hoffen ihr
+                        habt genauso viel Freude damit wie wir!</p>
+                    <a href="about_us.html" class="button">Mehr über uns</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="startpage-recipe-overview">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <a class="recipe-entry left" href="blog-entry.html">
+                    <img class="small-img left" src="img/wraps.jpeg" alt="Tortilla Wraps mit Jalapenos">
+                    <div class="text-wrapper">
+                        <div class="symbol"></div>
+                        <div class="symbol second"></div>
+                        <div class="text">
+                            <p class="date">01. März 2021</p>
+                            <h3 class="style-h3">Tortilla Wraps mit Jalapenos</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-5">
+                <a class="recipe-entry right" href="blog-entry.html">
+                    <img class="big-img" src="img/spaghetti.jpeg" alt="Tortilla Wraps mit Jalapenos">
+                    <div class="text-wrapper">
+                        <div class="symbol"></div>
+                        <div class="symbol second"></div>
+                        <div class="text">
+                            <p class="date">01. März 2021</p>
+                            <h3 class="style-h3">Spaghetti Bolognese</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5">
+                <a class="recipe-entry left" href="blog-entry.html">
+                    <img class="big-img left" src="img/guacamole.jpeg" alt="Tortilla Wraps mit Jalapenos">
+                    <div class="text-wrapper">
+                        <div class="symbol"></div>
+                        <div class="symbol second"></div>
+                        <div class="text">
+                            <p class="date">01. März 2021</p>
+                            <h3 class="style-h3">Tortillachips mit Guacamole Dip</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-5">
+                <a class="recipe-entry right" href="blog-entry.html">
+                    <img class="small-img" src="img/tiramisu.jpeg" alt="Tortilla Wraps mit Jalapenos">
+                    <div class="text-wrapper">
+                        <div class="symbol"></div>
+                        <div class="symbol second"></div>
+                        <div class="text">
+                            <p class="date">01. März 2021</p>
+                            <h3 class="style-h3">Tiramisu</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-5">
+                <a class="recipe-entry left" href="blog-entry.html">
+                    <img class="small-img left" src="img/gemüselaibchen.jpeg" alt="Tortilla Wraps mit Jalapenos">
+                    <div class="text-wrapper">
+                        <div class="symbol"></div>
+                        <div class="symbol second"></div>
+                        <div class="text">
+                            <p class="date">01. März 2021</p>
+                            <h3 class="style-h3">Gemüselaibchen</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-5">
+                <a class="recipe-entry right" href="blog-entry.html">
+                    <img class="big-img" src="img/kürbissuppe.jpeg" alt="Tortilla Wraps mit Jalapenos">
+                    <div class="text-wrapper">
+                        <div class="symbol"></div>
+                        <div class="symbol second"></div>
+                        <div class="text">
+                            <p class="date">01. März 2021</p>
+                            <h3 class="style-h3">Kürbiscreme Suppe</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <section class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex justify-content-center flex-column">
+                    <span class="style-h3 margin-top">Newsletter</span>
+                    <p class="margin-bottom-md">Melde dich jetzt für unseren Newsletter an und erhalte die neuesten
+                        Rezeptideen.</p>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center align-items-end flex-column margin-top margin-bottom">
+                    <div class="signup-bar">
+                        <input class="signup" placeholder="sample-email@gmail.com">
+                        <span class="subscribe-button">Abonnieren</span>
+                        <span class="subscribing"></span>
+                        <span class="thanks">Thanks. You have been subscribed!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">© 2021 Liebe im Topf</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="to-top" class="to-top">
+        <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.707107" y="5.96046e-08" width="12.2445" height="2.48105" rx="1.24052"
+                  transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 18.7531 9.90515)" fill="white"
+                  stroke="white"/>
+            <rect x="5.96046e-08" y="-0.707107" width="12.2445" height="2.47702" rx="1.23851"
+                  transform="matrix(-0.707107 0.707107 0.707107 0.707107 9.99704 1.34343)" fill="white" stroke="white"/>
+        </svg>
+
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script src="js/script.js"></script>
+<script src="js/scroll.js"></script>
+</body>
+</html>

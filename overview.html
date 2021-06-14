@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Foodblog Overview</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="scss/styles.css">
+    <link rel="stylesheet" type="text/css" href="scss/header.css">
+    <link rel="stylesheet" type="text/css" href="scss/variables.css">
+    <link rel="stylesheet" type="text/css" href="scss/blog-entry.css">
+    <link rel="stylesheet" type="text/css" href="scss/food-overview.css">
+    <link rel="stylesheet" type="text/css" href="scss/footer.css">
+
+    <link rel="icon" type="image/png" href="img/logo-liebeimtopf.svg" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/logo-liebeimtopf.svg" sizes="96x96">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700;1,800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<header>
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <a href="index.html">
+                        <img class="logo" src="img/logo-liebeimtopf.svg" alt="Logo">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-9">
+                    <nav>
+                        <input type="checkbox" id="nav" class="hidden"/>
+                        <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+                        <div class="nav-container">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a class="active" href="overview.html">Gsund & Guad</a></li>
+                                <li><a href="about_us.html">Über uns</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<body class="body">
+<section class="menu-search">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-9">
+                <div class="buttons">
+                    <button class="button button-without-bg all active">Alles</button><span>|</span>
+                    <button class="button button-without-bg spring-button">Vorspeisen</button> <span>|</span>
+                    <button class="button button-without-bg summer-button">Hauptspeisen</button> <span>|</span>
+                    <button class="button button-without-bg autumn-button">Nachspeisen</button> <span>|</span>
+                    <button class="button button-without-bg winter-button">Suppen</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="search d-flex justify-content-between">
+                    <span class="style-h3 search-text">
+                        Suche...
+                    </span>
+                    <span class="search-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.79879 12.6678C3.56709 12.6678 0.937622 9.82656 0.937622 6.33473C0.937622 2.84278 3.56709 0.0015564 6.79879 0.0015564C10.0304 0.0015564 12.6598 2.84278 12.6598 6.33473C12.6598 9.82656 10.0304 12.6678 6.79879 12.6678ZM6.79879 1.00152C4.07737 1.00152 1.86306 3.39415 1.86306 6.33473C1.86306 9.27531 4.07737 11.6678 6.79879 11.6678C9.52022 11.6678 11.7344 9.27531 11.7344 6.33473C11.7344 3.39415 9.52022 1.00152 6.79879 1.00152Z" fill="white"/>
+                            <path d="M15.2819 16C15.1634 16 15.045 15.9513 14.9549 15.8534L10.2907 10.8135C10.11 10.6182 10.11 10.3016 10.2907 10.1061C10.4715 9.91083 10.7645 9.91083 10.9453 10.1061L15.6095 15.146C15.7903 15.3413 15.7903 15.658 15.6095 15.8534C15.5188 15.9513 15.4004 16 15.2819 16Z" fill="white"/>
+                        </svg>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="more-recipes">
+
+<div class="container">
+    <div class="row no-gutters">
+        <a class="col-lg-4 item winter" href="blog-entry.html">
+             <div class="recipe-preview-wrapper">
+                <div class="image-wrapper">
+                    <img src="img/spaghetti.jpeg" alt="">
+                </div>
+                <div class="image-text">
+                    <h3 class="style-h3">Karotten-Ingwer Suppe - Quarantäne Küche</h3>
+                    <p class="date">19.04.2021</p>
+                    <p class="read-more">Zum Blogeintrag</p>
+                </div>
+            </div>
+        </a>
+        <a class="col-lg-4 item autumn" href="blog-entry.html">
+            <div class="recipe-preview-wrapper">
+                <div class="image-wrapper">
+                    <img src="img/tiramisu.jpeg" alt="">
+                </div>
+                <div class="image-text">
+                    <h3 class="style-h3">BAC’N CHEESE <br> BURGER</h3>
+                    <p class="date">22.03.2021</p>
+                    <p class="read-more">Zum Blogeintrag</p>
+                </div>
+            </div>
+        </a>
+        <a class="col-lg-4 item summer" href="blog-entry.html">
+            <div class="recipe-preview-wrapper">
+                <div class="image-wrapper">
+                    <img src="img/guacamole.jpeg" alt="">
+                </div>
+                <div class="image-text">
+                    <h3 class="style-h3">AUFSTRICH VON DER SÜSSKARTOFFEL</h3>
+                    <p class="date">14.02.2021</p>
+                    <p class="read-more">Zum Blogeintrag</p>
+                </div>
+            </div>
+        </a>
+        <a class="col-lg-4 item winter" href="blog-entry.html">
+            <div class="recipe-preview-wrapper">
+                <div class="image-wrapper">
+                    <img src="img/spaghetti.jpeg" alt="">
+                </div>
+                <div class="image-text">
+                    <h3 class="style-h3">Karotten-Ingwer Suppe - Quarantäne Küche</h3>
+                    <p class="date">19.04.2021</p>
+                    <p class="read-more">Zum Blogeintrag</p>
+                </div>
+            </div>
+        </a>
+        <a class="col-lg-4 item autumn" href="blog-entry.html">
+            <div class="recipe-preview-wrapper">
+                <div class="image-wrapper">
+                    <img src="img/tiramisu.jpeg" alt="">
+                </div>
+                <div class="image-text">
+                    <h3 class="style-h3">BAC’N CHEESE <br> BURGER</h3>
+                    <p class="date">22.03.2021</p>
+                    <p class="read-more">Zum Blogeintrag</p>
+                </div>
+            </div>
+        </a>
+        <a class="col-lg-4 item summer" href="blog-entry.html">
+            <div class="recipe-preview-wrapper">
+                <div class="image-wrapper">
+                    <img src="img/guacamole.jpeg" alt="">
+                </div>
+                <div class="image-text">
+                    <h3 class="style-h3">AUFSTRICH VON DER SÜSSKARTOFFEL</h3>
+                    <p class="date">14.02.2021</p>
+                    <p class="read-more">Zum Blogeintrag</p>
+                </div>
+            </div>
+        </a>
+        <a class="col-lg-4 item winter" href="blog-entry.html">
+            <div class="recipe-preview-wrapper">
+                <div class="image-wrapper">
+                    <img src="img/spaghetti.jpeg" alt="">
+                </div>
+                <div class="image-text">
+                    <h3 class="style-h3">Karotten-Ingwer Suppe - Quarantäne Küche</h3>
+                    <p class="date">19.04.2021</p>
+                    <p class="read-more">Zum Blogeintrag</p>
+                </div>
+            </div>
+        </a>
+        <a class="col-lg-4 item spring" href="blog-entry.html">
+            <div class="recipe-preview-wrapper">
+                <div class="image-wrapper">
+                    <img src="img/tiramisu.jpeg" alt="">
+                </div>
+                <div class="image-text">
+                    <h3 class="style-h3">BAC’N CHEESE <br> BURGER</h3>
+                    <p class="date">22.03.2021</p>
+                    <p class="read-more">Zum Blogeintrag</p>
+                </div>
+            </div>
+        </a>
+        <a class="col-lg-4 item summer" href="blog-entry.html">
+            <div class="recipe-preview-wrapper">
+                <div class="image-wrapper">
+                    <img src="img/guacamole.jpeg" alt="">
+                </div>
+                <div class="image-text">
+                    <h3 class="style-h3">AUFSTRICH VON DER SÜSSKARTOFFEL</h3>
+                    <p class="date">14.02.2021</p>
+                    <p class="read-more">Zum Blogeintrag</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+</div>
+</section>
+</body>
+<footer>
+    <section class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex justify-content-center flex-column">
+                    <span class="style-h3 margin-top">Newsletter</span>
+                    <p class="margin-bottom-md">Melde dich jetzt für unseren Newsletter an und erhalte die neuesten
+                        Rezeptideen.</p>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center flex-column margin-top margin-bottom">
+                    <div class="signup-bar">
+                        <input class="signup" placeholder="sample-email@gmail.com">
+                        <span class="subscribe-button">subscribe</span>
+                        <span class="subscribing"></span>
+                        <span class="thanks">Thanks. You have been subscribed!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">© 2021 Liebe im Topf</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="to-top" class="to-top">
+        <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.707107" y="5.96046e-08" width="12.2445" height="2.48105" rx="1.24052"
+                  transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 18.7531 9.90515)" fill="white"
+                  stroke="white"/>
+            <rect x="5.96046e-08" y="-0.707107" width="12.2445" height="2.47702" rx="1.23851"
+                  transform="matrix(-0.707107 0.707107 0.707107 0.707107 9.99704 1.34343)" fill="white" stroke="white"/>
+        </svg>
+
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/scroll.js"></script>
+</html>

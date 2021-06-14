@@ -1,0 +1,44 @@
+.menu-search {
+  margin-bottom: 50px;
+  margin-top: 22%;
+}
+@media (min-width: 768px) {
+  .menu-search {
+    margin-top: 12%;
+  }
+}
+.menu-search input[type=checkbox] {
+  display: none;
+}
+.menu-search label {
+  cursor: pointer;
+}
+.menu-search .search {
+  position: relative;
+  margin-top: 5%;
+}
+@media (min-width: 768px) {
+  .menu-search .search {
+    margin-top: 0;
+  }
+}
+.menu-search .search .search-text {
+  color: #F8F8F8;
+  font-weight: 400;
+}
+.menu-search .search:after {
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background: #F8F8F8;
+  height: 1px;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+/*# sourceMappingURL=food-overview.css.map */

@@ -1,0 +1,154 @@
+@import "variables";
+
+//Newsletter Section
+.footer-top {
+  position: relative;
+
+  .style-h3 {
+    margin-bottom: 2%;
+  }
+
+  &:after {
+    left: 0;
+    right: 0;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    top: 0;
+    background-color: $bg-color-light;
+    z-index: -1;
+  }
+
+  //Newsletter subscribe
+  .signup-bar {
+    width: 320px;
+    height: 50px;
+    background: rgba($secondary-color, 0.1);
+    border-radius: $border-radius;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .signup {
+    background: transparent;
+    border: 0;
+    color: $text-color;
+    position: absolute;
+    height: 100%;
+    width: 250px;
+    padding-left: 15px;
+    font-size: 13px;
+    font-weight: $font-weight-bold;
+    text-align: left;
+    line-height: 50px;
+    vertical-align: middle;
+    z-index: 10;
+    transition: transform 0.2s ease-in-out 0s;
+  }
+
+  .signup:focus {
+    outline: none;
+  }
+
+  .signup-active {
+    transform: translateX(320px);
+  }
+
+  .subscribe-button:hover{
+    background-color: $black;
+    color: $secondary-color;
+    cursor:pointer;
+    transition: 200ms;
+  }
+
+  .subscribe-button {
+    background: $secondary-color;
+    position: absolute;
+    top: -50px;
+    left: 220px;
+    height: 150px;
+    width: 100px;
+    text-align: center;
+    line-height: 150px;
+    vertical-align: middle;
+    color: $black;
+    font-weight: $font-weight-medium;
+    transition: transform 0.5s ease 0s;
+    font-size: 12px;
+  }
+
+  .subscribe-button-active{
+    transform: translateY(50px);
+  }
+
+  .subscribing{
+    background: $secondary-color;
+    height: 100%;
+    width: 320px;
+    z-index: 5;
+    position: absolute;
+    left:-320px;
+    display: inline-block;
+    transition: transform 1s ease 0s ;
+  }
+
+  .subscribing-active {
+    transform: translateX(320px);
+  }
+
+  .thanks {
+    background: transparent;
+    height: 100%;
+    width: 320px;
+    z-index: 5;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    padding-left: 0;
+    position: absolute;
+    top:50px;
+    color: $black;
+    display: inline-block;
+    transition: transform 0.5s ease 0s ;
+  }
+
+  .thanks-active {
+    transform: translateY(-50px);
+  }
+
+}
+.footer-bottom {
+  p {
+    margin-top: 1rem;
+  }
+
+}
+
+
+
+.to-top {
+  cursor: pointer;
+  background-color: $primary-color;
+  position: fixed;
+  z-index: 999;
+  right: 25px;
+  bottom: 8px;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  border-radius: 50%;
+  opacity: 0;
+
+  &.show {
+    opacity: 1;
+    transition: 300ms;
+  }
+
+  svg {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

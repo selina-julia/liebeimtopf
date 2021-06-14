@@ -1,0 +1,48 @@
+@import "variables";
+
+.menu-search {
+  margin-bottom: 50px;
+  margin-top: 22%;
+
+  @media (min-width: $md) {
+    margin-top: 12%;
+  }
+
+  input[type=checkbox]{
+    display:none;
+  }
+  label {
+    cursor:pointer;
+  }
+
+  .search {
+    position: relative;
+
+    margin-top: 5%;
+
+    @media(min-width: $md) {
+      margin-top: 0;
+    }
+
+    .search-text {
+      color: $text-color;
+      font-weight: $font-weight-regular;
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: -0px;
+      left: 0;
+      right: 0;
+      background: $text-color;
+      height: 1px;
+      width: 100%;
+
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
